@@ -23,16 +23,16 @@ function degisme(id, bosTasId){
         }
     }
     return(false)
-}
+    }
 
 function isClear(){
     for (var i = 0; i < taslar.length; i++) {
-      if(parseInt(yakinlar[i]) != i+1){
-        return(false)
-    }
+        if(parseInt(yakinlar[i]) != i+1){
+            return(false)
+        }
     return(true)
+    }
 }
-
 function pushed(id){
     var btn = document.getElementById(id);
     if (btn.firstChild.data!=" "){
