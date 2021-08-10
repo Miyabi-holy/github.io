@@ -30,8 +30,8 @@ function isClear(){
         if(parseInt(yakinlar[i]) != i+1){
             return(false)
         }
-    return(true)
     }
+    return(true)
 }
 function pushed(id){
     var btn = document.getElementById(id);
