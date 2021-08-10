@@ -41,7 +41,7 @@ function pushed(id){
         document.getElementById(bosTasId).firstChild.data = btn.firstChild.data;
         btn.firstChild.data = " "
     }
-    if (isClear) {
+    if (isClear()) {
       alert("Crear!")
     }
 }
