@@ -30,8 +30,8 @@ function isClear(){
       if(document.getElementById(taslar[i]).firstChild.data != i+1){
         return(false);
       }
-      return(true)
     }
+    return(true)
 }
 
 function pushed(id){
@@ -41,6 +41,9 @@ function pushed(id){
         if(degisme(id, bosTasId) == false) return;
         document.getElementById(bosTasId).firstChild.data = btn.firstChild.data;
         btn.firstChild.data = " "
+    }
+    if (isClear()) {
+      document.getElementById("clearButton").disabled = false
     }
 }
 
