@@ -23,16 +23,17 @@ function degisme(id, bosTasId){
         }
     }
     return(false)
-    }
+}
 
 function isClear(){
-    for (var i = 0; i < taslar.length; i++) {
-        if(parseInt(yakinlar[i]) != i+1){
-            return(false)
-        }
+    for (var i = 0; i < taslar.length-1; i++) {
+      if(document.getElementById(taslar[i]).firstChild.data != i+1){
+        return(false);
+      }
+      return(true)
     }
-    return(true)
 }
+
 function pushed(id){
     var btn = document.getElementById(id);
     if (btn.firstChild.data!=" "){
@@ -40,9 +41,6 @@ function pushed(id){
         if(degisme(id, bosTasId) == false) return;
         document.getElementById(bosTasId).firstChild.data = btn.firstChild.data;
         btn.firstChild.data = " "
-    }
-    if (isClear()) {
-      alert("Crear!")
     }
 }
 
